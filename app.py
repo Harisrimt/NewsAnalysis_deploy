@@ -13,12 +13,12 @@ import pickle
 from sklearn.feature_extraction.text import CountVectorizer
 
 # Load the pickled Random Forest model
-with open('/Users/hari/Desktop/Projects/P306/Model Building and deployment/random_forest_model.pkl', 'rb') as model_file:
+with open('random_forest_model.pkl', 'rb') as model_file:
 # with open('/Users/hari/Desktop/Projects/P306/Model Building and deployment/RFC.sav', 'rb') as model_file:
     random_forest_model = pickle.load(model_file)
 
 # Load the pickled vectorizer
-with open('/Users/hari/Desktop/Projects/P306/Model Building and deployment/vectorizer.pkl', 'rb') as vectorizer_file:
+with open('vectorizer.pkl', 'rb') as vectorizer_file:
 # with open('/Users/hari/Desktop/Projects/P306/Model Building and deployment/vect.sav', 'rb') as vectorizer_file:
     vectorizer = pickle.load(vectorizer_file)
 
