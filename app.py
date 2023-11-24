@@ -5,16 +5,21 @@ Created on Fri Nov 24 11:04:27 2023
 
 @author: hari
 """
+
+/home/adminuser/venv/bin/python -m pip install --upgrade pip
+
 import streamlit as st
 import pickle
 from sklearn.feature_extraction.text import CountVectorizer
 
 # Load the pickled Random Forest model
-with open('/Users/hari/Desktop/Projects/P306/Model Building and deployment/random_forest_model.pkl', 'rb') as model_file:
+# with open('/Users/hari/Desktop/Projects/P306/Model Building and deployment/random_forest_model.pkl', 'rb') as model_file:
+with open('RFC.sav', 'rb') as model_file:
     random_forest_model = pickle.load(model_file)
 
 # Load the pickled vectorizer
-with open('/Users/hari/Desktop/Projects/P306/Model Building and deployment/vectorizer.pkl', 'rb') as vectorizer_file:
+# with open('/Users/hari/Desktop/Projects/P306/Model Building and deployment/vectorizer.pkl', 'rb') as vectorizer_file:
+with open('vect.sav', 'rb') as vectorizer_file:
     vectorizer = pickle.load(vectorizer_file)
 
 # Streamlit app
