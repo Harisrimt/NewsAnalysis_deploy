@@ -5,6 +5,9 @@ Created on Fri Nov 24 11:04:27 2023
 
 @author: hari
 """
+
+/home/adminuser/venv/bin/python -m pip install --upgrade pip
+
 import streamlit as st
 import pickle
 from sklearn.feature_extraction.text import CountVectorizer
