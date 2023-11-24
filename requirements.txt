@@ -1,5 +1,5 @@
 pandas
 sklearn
-streamlit 
+streamlit
 pickle
 
